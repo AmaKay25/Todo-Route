@@ -13,7 +13,7 @@ const router = express.Router();
  
  router.post('/todo', async ( req,res) => {
 
-    const {title,description,date} = req.body;
+    const {title,description,date} = req.body
 
     try {
         const todoModel = await Todo.create ({
